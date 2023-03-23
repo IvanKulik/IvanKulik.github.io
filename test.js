@@ -21,8 +21,19 @@ function but3() {
     document.getElementById('Button').innerText = 'Скрыть квадрат';
 }
 
+function but4(anElement) {
+    let text = anElement.innerText
+    document.getElementById('txt').value += text;
+}
 
+function but5() {
+    let text = document.getElementById("txt").value;
+    document.getElementById('txt').value = eval(text);
+}
 
+function but6() {
+    document.getElementById('txt').value = '';
+}
 
 let text = document.querySelectorAll('.red');
 let arr = Array.prototype.map.call(text, function (el, i) {
